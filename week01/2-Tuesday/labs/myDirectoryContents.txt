@@ -1,0 +1,24 @@
+.
+..
+.gitignore
+deserts.txt
+glaciers.txt
+hello.txt
+islands.txt
+lakes.txt
+mountains.txt
+myDirectoryContents.txt
+newFile.txt
+oceans.txt
+volcanoes.txt
+total 10
+-rw-r--r-- 1 claud 197609 213 Nov 10 12:37 deserts.txt
+-rw-r--r-- 1 claud 197609 183 Nov 10 12:37 glaciers.txt
+-rw-r--r-- 1 claud 197609  18 Nov 10 15:17 hello.txt
+-rw-r--r-- 1 claud 197609 137 Nov 10 12:37 islands.txt
+-rw-r--r-- 1 claud 197609 103 Nov 10 12:37 lakes.txt
+-rw-r--r-- 1 claud 197609 118 Nov 10 12:37 mountains.txt
+-rw-r--r-- 1 claud 197609 148 Nov 10 15:32 myDirectoryContents.txt
+-rw-r--r-- 1 claud 197609  12 Nov 10 15:28 newFile.txt
+-rw-r--r-- 1 claud 197609  73 Nov 10 12:37 oceans.txt
+-rw-r--r-- 1 claud 197609 206 Nov 10 12:37 volcanoes.txt
