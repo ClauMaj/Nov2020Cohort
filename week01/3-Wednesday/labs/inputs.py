@@ -2,9 +2,13 @@
 # Please enter your name: Eric
 # Hello, Eric!
 
+name = input('What is your name?: ')
+print(f'Hello, {name}!')
 
 # Prompt the user for his name using the input function. Example:
 
+print(f'Hello, {name.upper()}!')
+print(f'Your name has {len(name)} letters in it! Awesome!')
 
 # Same as the first exercise, but this time print the user's
 # name in ALL CAPS, and also tell them the number of letters in their name.
