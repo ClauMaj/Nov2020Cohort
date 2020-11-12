@@ -10,15 +10,24 @@ planet6 = "Mercury"
 planet7 = "Uranus"
 planet8 = "Venus"
 
+planets = ["Earth" , "Jupiter" , "Neptune" , "Mars" , "Saturn" , "Mercury" , "Uranus" , "Venus"]
+print(planets)
+
 # 2. Print out how many elements are in the planet list
 
+lengthOfArray = len(planets)
+print(len(planets))
 
 # 3. Create a while loop that iterates through each of the items in the planet list
 # and changes them to lowercase .
 
+count = 0
+while (count <= len(planets))
+    planets[count] = planets{}[count].lower()
+    count += 1
 
 # 4. Add Pluto to the planet list.
-
+planets.append('Pluto')
 
 # 5. Combine the follwing 2 lists into a list called Houston.
 # Find how many cities are listed in the Houston list
