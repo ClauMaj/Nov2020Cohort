@@ -23,7 +23,7 @@ print(len(planets))
 
 count = 0
 while (count <= len(planets))
-    planets[count] = planets{}[count].lower()
+    planets[count] = planets[count].lower()
     count += 1
 
 # 4. Add Pluto to the planet list.
