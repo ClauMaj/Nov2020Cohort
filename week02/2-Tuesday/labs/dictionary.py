@@ -22,11 +22,11 @@
 # "whatever" in zodiac #checks if it's there - returns boolean
 # # 2. Given the following dictionary
 
-# phonebook_dict = {
-#     'Alice': '703-493-1834',
-#     'Bob': '857-384-1234',
-#     'Elizabeth': '484-584-2923'
-# }
+phonebook_dict = {
+    'Alice': '703-493-1834',
+    'Bob': '857-384-1234',
+    'Elizabeth': '484-584-2923'
+}
 
 
 
@@ -39,7 +39,7 @@
 # # 2d. Change Bob's phone number to '968-345-2345'.
 # phonebook_dict['Bob'] = "968-345-2345"
 # # 2e. Print all the phone entries.
-# print(phonebook_dict.items())
+print(phonebook_dict.items())
 # for key, value in phonebook_dict.items():
 #     print(key)
 #     print(value)
@@ -77,15 +77,15 @@
 # and returns a dictionary containing the tally of how many times
 # each letter in the alphabet was used in the word. For example:
 
-def histogram(word):
-    count = {}
-    for i in word:
-        if i not in count:
-            count[i] = 1
-        else:
-            count[i] += 1
-    return count
-print(histogram("banana"))
+# def histogram(word):
+#     count = {}
+#     for i in word:
+#         if i not in count:
+#             count[i] = 1
+#         else:
+#             count[i] += 1
+#     return count
+# print(histogram("banana"))
 
 
 # >>>letter_histogram('banana')
@@ -94,24 +94,33 @@ print(histogram("banana"))
 
 # Word Summary
 # Write a word_histogram function that takes a paragraph of text as its input, and returns a dictionary containing the tally of how many times each word in the alphabet was used in the text. For example:
-def histogram2(paragraph):
-    count = {}
-    text = paragraph.lower().split()
-    for i in text:
-        if i not in count:
-            count[i] = 1
-        else:
-            count[i] +=1
-    return count
-print(histogram2('To be or not to be be be be'))
+# def histogram2(paragraph):
+#     count = {}
+#     text = paragraph.lower().split(" ")
+#     for i in text:
+#         if i not in count:
+#             count[i] = 1
+#         else:
+#             count[i] +=1
+#     return count
+
+# v = histogram2('To be or not to be be be be')
+# print(v)
+
 # >>> word_histogram('To be or not to be')
 
+# 3. Sorting a histogram
+# Given a histogram tally (one returned from either letter_histogram or word_histogram), print the top 3 words or letters.
 
-def histogram3(string):
-    freq = {}
-    for i in string: 
-        freq[i] = freq.get(i,0) + 1
-    return freq
-print(histogram('banananana'))
+# def sort(a):
+#     return sorted(a.items(), key=lambda r: r[1], reverse=True)
+
+# print(sort(v))
+# def histogram3(string):
+#     freq = {}
+#     for i in string: 
+#         freq[i] = freq.get(i,0) + 1
+#     return freq
+# print(histogram('banananana'))
 
 # dc pass: narf
