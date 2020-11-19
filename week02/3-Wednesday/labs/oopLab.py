@@ -1,24 +1,60 @@
 
 
 # 1. Create an empty class called "Student"
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+#     def greeting(self):
+#         print(f"Good morning {self.name}.")
+    # def greet(name):
+    #     print(f"Good morning {name}")
 
 
 # 2. Create 5 students objects (instances of the class "Student") of "Student" types
 
+# student1 = Student("One")
+# student2 = Student("Two")
+# student3 = Student("Three")
+# student4 = Student("Four")
+# student5 = Student("Five")
 
+# student1 = Student()
+# student2 = Student()
+# student3 = Student()
+# student4 = Student()
+# student5 = Student()
+# a = [student1,
+# student2,
+# student3,
+# student4,
+# student5]
 # 3a. Create a "greeting" method inside of the class "Student" class that
 # takes as a parameter "name". The return of the  method should be
 # "Good morning {name}"
 
+# print(student1.greeting('one'))
+# print(student2.greeting('two'))
+# print(student3.greeting('three'))
+# print(student4.greeting('four'))
+# print(student5.greeting('five'))
+
+# for item in a:
+#     item.greeting()
 
 # 4. Call the greet  method on each of the students in # 5 passing in a different
 # name argument each time.
+
+
 
 # 5a. Create a constructor for the Student class.
 # 5b. Create a print statement inside of the constructor
 # 5c. Run your lab.py again and you should see a print statement for each student object
 # That you created
-
+# student1.greeting()
+# student2.greeting()
+# student3.greeting()
+# student4.greeting()
+# student5.greeting()
 
 # 6a. Pass in "name" as a parameter to your Student constructor.
 # 6b. Create an instance variable for name
@@ -55,7 +91,23 @@
 
 
 # . Inheritance
+class Car:
+    def __init__(self, make, model,color):
+        self.make = make
+        self.model = model
+        self.color = color
+    def carDetail(self):
+        print(f"Here are the details of the car \nmake {self.make} | model {self.model} | color {self.color}")
 
+class Hybrid(Car):
+
+    def carType(self):
+        print("I am a hybrid car")
+
+class Electric(Car):
+
+    def carType(self):
+        print("I")
 # Create a new class called Car with the following method :
 # CarDetails which prints "Here are details of this car"
 
@@ -86,3 +138,21 @@
 # Super()
 
 # COMPOSITION
+
+
+class Person:
+    def __init__(self, name, email, phone):
+        self.name = name
+        self.email = email
+        self.phone = phone
+    def greet(self, other_person):
+        print('Hello {}, I am {}!'.format(other_person.name, self.name))
+
+sonny = Person("Sonny", "sonny@hotmail.com", "483-485-4948")
+jordan = Person("Jordan", "jordan@aol.com", "495-586-3456")
+
+sonny.greet(jordan)
+jordan.greet(sonny)
+
+print(f"Sonny's email: {sonny.email}  and phone: {sonny.phone}")
+print(f"Jordan's email: {jordan.email}  and phone: {jordan.phone}")

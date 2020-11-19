@@ -8,7 +8,7 @@ class Greeting:
   def say_hello():
     print("Hello there!")
 
-
+greet = Greeting()
 class Person:
   def __init__(self, name):
     self.name = name
