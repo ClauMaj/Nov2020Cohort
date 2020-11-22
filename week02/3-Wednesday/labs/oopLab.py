@@ -91,23 +91,23 @@
 
 
 # . Inheritance
-class Car:
-    def __init__(self, make, model,color):
-        self.make = make
-        self.model = model
-        self.color = color
-    def carDetail(self):
-        print(f"Here are the details of the car \nmake {self.make} | model {self.model} | color {self.color}")
+# class Car:
+#     def __init__(self, make, model,color):
+#         self.make = make
+#         self.model = model
+#         self.color = color
+#     def carDetail(self):
+#         print(f"Here are the details of the car \nmake {self.make} | model {self.model} | color {self.color}")
 
-class Hybrid(Car):
+# class Hybrid(Car):
 
-    def carType(self):
-        print("I am a hybrid car")
+#     def carType(self):
+#         print("I am a hybrid car")
 
-class Electric(Car):
+# class Electric(Car):
 
-    def carType(self):
-        print("I")
+#     def carType(self):
+#         print("I")
 # Create a new class called Car with the following method :
 # CarDetails which prints "Here are details of this car"
 
@@ -145,8 +145,14 @@ class Person:
         self.name = name
         self.email = email
         self.phone = phone
+        self.friends = []
+
     def greet(self, other_person):
         print('Hello {}, I am {}!'.format(other_person.name, self.name))
+    def friend(self , newFriend):
+        if newFriend not in self.friends:
+            self.friends.append(newFriend)
+            newFriend.friends.append(self)
 
 sonny = Person("Sonny", "sonny@hotmail.com", "483-485-4948")
 jordan = Person("Jordan", "jordan@aol.com", "495-586-3456")
@@ -156,3 +162,11 @@ jordan.greet(sonny)
 
 print(f"Sonny's email: {sonny.email}  and phone: {sonny.phone}")
 print(f"Jordan's email: {jordan.email}  and phone: {jordan.phone}")
+
+sonny.friend(jordan)
+
+for item in sonny.friends:
+    print(item.name)
+
+for item in jordan.friends:
+    print(item.name)
