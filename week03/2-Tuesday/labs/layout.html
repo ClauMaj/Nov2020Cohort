@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .header{
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .opacity{
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            opacity: 50%;
+            position: absolute;
+            top: 0px;
+            z-index: 100;
+        }
+        .cityImg{
+            position: absolute;
+            top: -800px;
+        }
+        .imgContainer{
+            position: relative;
+        }
+        .textContainer{
+            position: absolute;
+            top: 0px;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            height: 100px;
+            line-height: 300px;
+            width: 100%;
+            z-index: 150;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="opacity"></div>
+        <div class="imgContainer">
+            <img class="cityImg" src="images/Seattle.jpeg" alt="seattle">
+        </div>
+        <div class="textContainer">
+            Welcome to whatever!
+        </div>
+    </div>
+</body>
+</html>
