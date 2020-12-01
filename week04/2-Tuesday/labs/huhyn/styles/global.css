@@ -38,3 +38,6 @@ white = #FFFFFF
 .cp-text-white{
     color: #ffffff;
 }
+a{
+    color: #FCA311 !important;
+}
