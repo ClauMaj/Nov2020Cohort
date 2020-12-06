@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            background-color: yellow;
+        }
+        .titleBlue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="bla">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel mollitia asperiores reiciendis nihil voluptate error quam nisi a. Dolor incidunt voluptate debitis dolorum fugiat voluptas ab sunt labore similique.</div>
+    
+<p class="title" >dasda</p>
+<p class="title" >dada</p>
+<p class="title" >dasdas</p>
+<p class="title" >dasda</p>
+
+<a class="title" href="https//:google.com">Google</a>
+
+    <script>
+        // window.alert('Hello there');
+        // var dip = documen.getElementById("bla");
+        // console.log(dip);
+
+        var arr = document.getElementsByTagName("p");  //array
+        for (let index= 0; index <arr.length;index++) { //loop through array
+            arr[index].textContent = "Claude"; // change each elem
+        }
+        var arrTitle = document.querySelectorAll(".title");
+        for (let i= 0; i <arrTitle.length; i++) {
+            arrTitle[i].setAttribute('class', 'titleBlue');
+
+            
+        }
+
+        
+
+    </script>
+</body>
+</html>
