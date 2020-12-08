@@ -807,3 +807,16 @@ var data = [
         testsPerOneMillion: 0
     }
 ]
+
+// body = document.querySelector('body');
+// contFluid = document.createElement('div');
+// contFluid.setAttribute('class', "container-fluid");
+// contRow = document.createElement('div');
+// contRow.setAttribute('class', "row");
+// contFluid.appendChild(contRow);
+// body.appendChild(contFluid);
+
+// function createCard(name,cases,deaths){
+//     contFluid = document.createElement('div');
+//     contFluid.setAttribute('class', "container-fluid");
+// }
