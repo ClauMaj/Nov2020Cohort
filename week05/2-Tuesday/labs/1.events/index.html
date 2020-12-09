@@ -17,9 +17,38 @@
     <li><img src="images/gry.gif" alt="gray" id="gray"></li>
     <li><img src="images/red.gif" alt="red" id="red"></li>
   </ul>
+    <div id="response">
 
+    </div>
   
   <script>
+
+    //retrieve ul tag and attach event listener
+    var ulTag = document.querySelector('ul');
+    var responseDiv = document.querySelector('#response');
+    ulTag.addEventListener('click',(e) => {
+      response.textContent = `You clicked on ${e.target.id}`;
+    });
+
+    var body = document.querySelector('body');
+    body.addEventListener('keydown', (e) => {
+      console.log(e);
+      if (e.key === 'p'){
+        body.style.backgroundColor = 'purple';
+      };
+      
+    })
+
+
+    // choose an image
+    // alert(name of color)
+    // var pinkImg = document.querySelector('#pink');
+    // var responseDiv = document.querySelector('#response');
+
+    // pink.addEventListener('click', () => {
+    //   responseDiv.textContent = 'You clicked on pink';
+    //   responseDiv.setAttribute('style', 'background-color: pink');
+    // });
 
     
   </script>

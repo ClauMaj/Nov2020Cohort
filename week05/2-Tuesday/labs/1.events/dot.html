@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: orange;
+        }
+        .dot{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var body = document.querySelector('body');
+        window.addEventListener('click',(e) => {
+            let dot = document.createElement("div");
+            dot.className = 'dot';
+            dot.style.left = `${e.x-10}px`;
+            dot.style.top = `${e.y-10}px`;
+            body.appendChild(dot);
+        })
+    </script>
+</body>
+</html>
