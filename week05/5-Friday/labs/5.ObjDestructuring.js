@@ -12,6 +12,10 @@ var obj = {
 console.log(mult(obj));
 //300
 
+var mult = obj => {
+    let {x,y,z} = obj;
+    return x*y*z;
+}
 
 /*
 Create shortPerson() function that will destructure each person object.
