@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: purple;
+            font-size: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    weather
+
+    <div>
+
+    </div>
+
+    <script>
+        fetch('http://api.openweathermap.org/data/2.5/weather?q=denver&appid=9361bd03ec7175e9eea92fdf7a717518')
+        .then(response => response.json())
+        .then(data => {
+            let kelvin = data.main.temp;
+            let degC = Math.floor(kelvin - 273.15);
+            console.log(degC);
+            let degF = degC *1.8 +32;
+            console.log(degF);
+            let div = document.querySelector('div');
+            div.textContent = `Current temp: ${degC}`;
+            console.log("1");
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+        console.log("2");
+
+    </script>
+</body>
+</html>
+
+

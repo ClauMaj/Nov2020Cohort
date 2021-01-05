@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    fetch build
+
+    <script>
+        var fetch = new Promise((resolve,reject) => {        //new fetch of promise class
+
+            const request = new XMLHttpRequest()              // create an XHR object
+
+            request.onreadystatechange = function() {      // listener for data state when coming back
+                if (this.readyState ===4){                 // 4 means ready
+                    resolve(this.responseText);              //resolve means return
+                }
+                else if (this.status === 400) {              // handle error
+                    reject("error: can't fetch URL");
+                }
+            }
+
+            request.open("GET","https://jsonplaceholder.typicode.com/todos");
+            request.send()
+        }) 
+        .then(response=>{
+            
+            return JSON.parse(response)
+            
+        })
+
+        .then(data => {
+            console.log(data);
+        });
+
+        
+    </script>
+</body>
+</html>

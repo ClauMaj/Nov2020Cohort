@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaCases</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        fetch('https://corona.lmao.ninja/v2/states')
+        .then(response => response.json())
+        .then(data => {
+            var list = document.querySelector('ul');
+            data.map((item) => {
+                list.innerHTML += `<li>${item.state}: cases ${item.cases}, today ${item.todayCases}</li>`
+            })
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+    </script>
+</body>
+</html>
