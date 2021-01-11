@@ -1,9 +1,22 @@
 const express = require('express');
-const { route } = require('./speakers');
 const router = express.Router();
 
+let dataFile = require('../data/data.json');
+
 router.get('/', (req,res) => {
-    res.render('index')
-} )
+
+    let pageSpeakers = dataFile.speakers
+    let pagePhotos = [];
+    pageSpeakers.forEach( el => {
+        pagePhotos = [...pagePhotos,...el.artwork];
+        // pagePhotos = pagePhotos.concat(el.artwork);
+    })
+
+    console.log(pagePhotos);
+    res.render('index',{
+        photos: pagePhotos
+    });
+
+})
 
 module.exports = router;
