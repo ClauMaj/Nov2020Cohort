@@ -12,7 +12,6 @@ router.get('/', (req,res) => {
         // pagePhotos = pagePhotos.concat(el.artwork);
     })
 
-    console.log(pagePhotos);
     res.render('index',{
         photos: pagePhotos
     });
